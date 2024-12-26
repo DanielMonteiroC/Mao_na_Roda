@@ -1,0 +1,206 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; 
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #1b1f3b; 
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px; 
+}
+
+.search-bar {
+  flex: 1;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #4a90e2; 
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.left-sidebar {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 200px;
+  background-color: #1b1f3b;
+  color: white;
+  padding: 16px;
+  border-radius: 0 8px 8px 0;
+  z-index: 1000;
+}
+
+.menu-item {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a4a7f;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.menu-item:hover {
+  background-color: #4a90e2;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+.map-container {
+  flex: 3;
+  height: 80vh;
+  background-color: #2b2f5b; 
+  border-radius: 8px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #1b1f3b;
+  color: white;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.ad {
+  background-color: #4a4a7f;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.prestadores-list {
+  background-color: #e0e0e0; 
+  border-radius: 8px;
+  padding: 16px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.prestadores-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prestadores-list li {
+  padding: 12px;
+  margin-bottom: 10px; 
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+.prestadores-list li:hover {
+  background-color: #4a90e2; 
+  color: white; 
+  transform: scale(1.05); 
+}
+
+.perfil-container {
+  padding: 16px;
+  background-color: #f9f9f9; 
+  border-radius: 8px;
+  color: #333;  
+}
+
+.perfil-container h2 {
+  margin-top: 0;
+}
+
+.perfil-container h3 {
+  color: #1b1f3b; 
+}
+
+.edit-button {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 14px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.foto-item {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.resultados-container {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  right: 20px;
+  background-color: white; 
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  z-index: 1000;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.fechar-aba {
+  background-color: #e74c3c; 
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right; 
+}
